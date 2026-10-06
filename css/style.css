@@ -1,0 +1,96 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+header {
+  display: flex; /* using this , the element of header can be next to each other */
+  justify-content: space-between; /*It pushes the first element to the left and the last element to the right*/
+  align-items: center;
+  background-color: white;
+  padding: 0 175px;
+  height: 90px;
+  border-bottom: 0.001px solid rgb(210, 210, 210);
+}
+
+nav {
+  display: flex; /*control over the element , so like that we can have gap between them*/
+  align-items: center; /*to center the element so they wont go up */
+  gap: 35px;
+}
+
+nav a {
+  /* here i am talking about the a inside the nav so other a wont be affected*/
+  text-decoration: none; /* to remove the line under the text*/
+  color: black;
+  font-style: inter;
+  font-weight: 600;
+}
+
+nav a.active {
+  /* this one so whenever i click on link it turend bleu */
+  color: #2563eb;
+}
+
+.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 14px 22px;
+}
+
+.image {
+  height: 110px;
+  width: auto;
+}
+
+footer {
+  display: flex;
+  height: 90px;
+  background-color: #01153e;
+  padding-left: 890px;
+  align-items: center;
+}
+
+.second-nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.second-nav a {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.hero {
+  padding: 90px 175px;
+  color: white;
+  background-color: #01153e;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+.hero-text {
+  max-width: 650px;
+}
+
+.hero-info {
+  min-width: 290px;
+  padding: 32px;
+  color: #01153e;
+  background-color: white;
+}
+
+.button {
+  padding: 15px 15px;
+  background-color: white;
+  color: #01153e;
+  font-style: inter;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+}
