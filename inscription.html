@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://rsms.me" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/images/logo.png" alt="logo" class="image" />
+      <nav>
+        <a href="index.html"> Accueil</a>
+        <a href="#"> Programme</a>
+        <a href="intervenants.html"> Intervenants</a>
+        <a href="inscription.html" class="btn"> Inscription</a>
+      </nav>
+    </header>
+    <main class="Intermain">
+      <section class="heroInsc">
+        <div class="heroInter-content">
+          <p>REJOIGNEZ-NOUS</p>
+          <h1>Inscription</h1>
+          <p>Remplissez ce formulaire pour participer à Atlas Dev Days 2026</p>
+        </div>
+      </section>
+      <section>
+        <form>
+          <h2>Votre inscription</h2>
+          <p>Tous les champs marqués d'un astérisque sont obligatoires.</p>
+          <label for="nom">Nom complet *</label>
+          <input type="text" id="nom" name="nom" required />
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" />
+
+          <label for="profil">Profil *</label>
+          <select id="profil" name="profil" required>
+            <option value="">Choisissez votre profil</option>
+            <option value="etudiant">Étudiant(e)</option>
+            <option value="developpeur">Développeur(se)</option>
+            <option value="designer">Designer</option>
+            <option value="autre">Autre</option>
+          </select>
+        </form>
+        <aside></aside>
+      </section>
+    </main>
+    <footer>
+      <nav class="second-nav">
+        <a> Contact </a>
+        <a>Instagram</a>
+        <a>LinkedIn</a>
+        <a>Mentions légales</a>
+      </nav>
+    </footer>
+  </body>
+</html>
