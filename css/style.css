@@ -38,6 +38,7 @@ nav a.active {
   color: white;
   padding: 14px 22px;
   text-decoration: none;
+  font-weight: 700;
   font-size: medium;
 }
 
@@ -420,10 +421,9 @@ aside {
 .labelSmall {
   font-size: 17px;
   padding-bottom: 12px;
-      display: block;
-
+  display: block;
 }
- 
+
 input[type="text"],   /*understand all this*/
 input[type="email"],
 input[type="tel"],
@@ -449,4 +449,20 @@ legend {
   margin-bottom: 20px;
 }
 
+.last-btn {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f5f9;
+  justify-content: center;
+}
 
+.linkedin {
+  display: flex;
+  align-items: center;
+  color: #2864e8;
+  justify-content: center;
+  font-weight: 600;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
