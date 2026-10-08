@@ -24,20 +24,27 @@
           <p>Remplissez ce formulaire pour participer à Atlas Dev Days 2026</p>
         </div>
       </section>
-      <section>
+      <section class="InscInf">
         <form>
-          <h2>Votre inscription</h2>
-          <p>Tous les champs marqués d'un astérisque sont obligatoires.</p>
-          <label for="nom">Nom complet *</label>
-          <input type="text" id="nom" name="nom" required />
+          <h2 class="titre1">Votre inscription</h2>
+          <p class="sous-titre2">
+            Tous les champs marqués d'un astérisque sont obligatoires
+          </p>
+          <label for="nom" class = "labelBig">Nom complet *</label>
+          <input type="text" id="nom" name="nom" required minlength="3" />
 
-          <label for="email">Email *</label>
+          <label  for="email" class = "labelBig">Email *</label>
           <input type="email" id="email" name="email" required />
 
-          <label for="telephone">Téléphone</label>
-          <input type="tel" id="telephone" name="telephone" />
+          <label for="telephone" class = "labelBig">Téléphone </label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            pattern="^(\+212|0)[5-7][0-9]{8}$"
+          />
 
-          <label for="profil">Profil *</label>
+          <label for="profil" class = "labelBig">Profil *</label>
           <select id="profil" name="profil" required>
             <option value="">Choisissez votre profil</option>
             <option value="etudiant">Étudiant(e)</option>
@@ -45,8 +52,91 @@
             <option value="designer">Designer</option>
             <option value="autre">Autre</option>
           </select>
+          <fieldset>
+            <legend>Ateliers souhaités *</legend>
+
+            <label class = "labelSmall">
+              <input type="checkbox" name="ateliers" value="frontend" />
+              Front-end moderne
+            </label>
+
+            <label class = "labelSmall">
+              <input type="checkbox" name="ateliers" value="javascript" />
+              JavaScript avancé
+            </label>
+
+            <label class = "labelSmall">
+              <input type="checkbox" name="ateliers" value="SÉCURITÉ" />
+              Sécurité
+            </label>
+
+            <label class = "labelSmall">
+              <input type="checkbox" name="ateliers" value="bendack" />
+              Back-end
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Journée(s) de participation *</legend>
+
+            <label class = "labelSmall">
+              <input type="radio" name="journee" value="jour1" required />
+              Jour 1
+            </label >
+
+            <label class = "labelSmall">
+              <input type="radio" name="journee" value="jour2" />
+              Jour 2
+            </label>
+
+            <label class = "labelSmall">
+              <input type="radio" name="journee" value="les-deux" />
+              Les deux
+            </label>
+          </fieldset>
+
+          <label for="message" class = "labelBig">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Votre message..."
+          ></textarea>
+
+          <label class = "labelSmall">
+            <input
+              type="checkbox"
+              id="consentement"
+              name="consentement"
+              required
+            />
+            J'accepte les conditions de participation *
+          </label>
+          <button type="submit" class="btn">Envoyer mon inscription</button>
         </form>
-        <aside></aside>
+        <aside>
+          <h2 class="titre">
+            Informations <br />
+            Pratiques
+          </h2>
+          <p>________________________________</p>
+          <p class="sous-titre">Lieu</p>
+          <p>Casablanca, Maroc</p>
+          <p>________________________________</p>
+
+          <p class="sous-titre">Horaires</p>
+          <p>09:00 — 18:00</p>
+          <p>________________________________</p>
+
+          <p class="sous-titre">Dates</p>
+          <p>17 — 18 Octobre 2026</p>
+          <p><br /></p>
+
+          <p>
+            Une confirmation vous sera envoyée par <br />
+            après votre inscription.
+          </p>
+        </aside>
       </section>
     </main>
     <footer>
