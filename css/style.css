@@ -5,7 +5,7 @@ body {
   font-family: Inter, sans-serif;
 }
 header {
-  display: flex; /* control over the element  , the element of header can be next to each other */
+  display: flex; /* control over the element  , the elements of header can be next to each other */
   justify-content: space-between; /*It pushes the first element to the left and the last element to the right*/
   align-items: center;
   background-color: white;
@@ -78,9 +78,6 @@ footer {
   justify-content: space-between;
   gap: 80px;
 }
-/* .hero-text {
-  max-width: 650px;
-} */
 
 .hero-info {
   min-width: 290px;
@@ -418,7 +415,7 @@ aside {
   display: block;
 }
 
-input[type="text"],   /*understand all this*/
+input[type="text"],   
 input[type="email"],
 input[type="tel"],
 select,
@@ -458,5 +455,5 @@ legend {
   justify-content: center;
   font-weight: 600;
   font-size: large;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial ;
 }
