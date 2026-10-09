@@ -415,11 +415,7 @@ aside {
   display: block;
 }
 
-input[type="text"],   
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
+.lazy-input {
   width: 100%;
   padding: 15px;
   margin-bottom: 30px;

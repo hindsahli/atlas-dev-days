@@ -36,10 +36,10 @@
             Tous les champs marqués d'un astérisque sont obligatoires
           </p>
           <label for="nom" class="labelBig">Nom complet *</label>
-          <input type="text" id="nom" name="nom" required minlength="3" />
+          <input type="text" id="nom" name="nom" required minlength="3" class = "lazy-input"/>
 
           <label for="email" class="labelBig">Email *</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" required class = "lazy-input"/>
 
           <label for="telephone" class="labelBig">Téléphone </label>
           <input
@@ -47,10 +47,11 @@
             id="telephone"
             name="tel"
             pattern="^(\+212|0)[5-7][0-9]{8}$"
+            class = "lazy-input"
           />
 
           <label for="profil" class="labelBig">Profil *</label>
-          <select id="profil" name="profil" required>
+          <select id="profil" name="profil" required class = "lazy-input">
             <option value="">Choisissez votre profil</option>
             <option value="etudiant">Étudiant(e)</option>
             <option value="developpeur">Développeur(se)</option>
@@ -106,6 +107,7 @@
             name="message"
             rows="5"
             placeholder="Votre message..."
+            class = "lazy-input"
           ></textarea>
 
           <label class="labelSmall">
