@@ -1,11 +1,16 @@
 <!doctype html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Inscrivez-vous à Atlas Dev Days 2026 à Casablanca, les 17 et 18 octobre. Choisissez vos ateliers et vos journées de participation grâce à notre formulaire d'inscription."
+    />
+    <title>Inscription | Atlas Dev Days 2026</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://rsms.me" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   </head>
+
   <body>
     <header>
       <img src="assets/images/logo.png" alt="logo" class="image" />
@@ -30,13 +35,13 @@
           <p class="sous-titre2">
             Tous les champs marqués d'un astérisque sont obligatoires
           </p>
-          <label for="nom" class = "labelBig">Nom complet *</label>
+          <label for="nom" class="labelBig">Nom complet *</label>
           <input type="text" id="nom" name="nom" required minlength="3" />
 
-          <label  for="email" class = "labelBig">Email *</label>
+          <label for="email" class="labelBig">Email *</label>
           <input type="email" id="email" name="email" required />
 
-          <label for="telephone" class = "labelBig">Téléphone </label>
+          <label for="telephone" class="labelBig">Téléphone </label>
           <input
             type="tel"
             id="tel"
@@ -44,7 +49,7 @@
             pattern="^(\+212|0)[5-7][0-9]{8}$"
           />
 
-          <label for="profil" class = "labelBig">Profil *</label>
+          <label for="profil" class="labelBig">Profil *</label>
           <select id="profil" name="profil" required>
             <option value="">Choisissez votre profil</option>
             <option value="etudiant">Étudiant(e)</option>
@@ -55,22 +60,22 @@
           <fieldset>
             <legend>Ateliers souhaités *</legend>
 
-            <label class = "labelSmall">
+            <label class="labelSmall">
               <input type="checkbox" name="ateliers" value="frontend" />
               Front-end moderne
             </label>
 
-            <label class = "labelSmall">
+            <label class="labelSmall">
               <input type="checkbox" name="ateliers" value="javascript" />
               JavaScript avancé
             </label>
 
-            <label class = "labelSmall">
+            <label class="labelSmall">
               <input type="checkbox" name="ateliers" value="SÉCURITÉ" />
               Sécurité
             </label>
 
-            <label class = "labelSmall">
+            <label class="labelSmall">
               <input type="checkbox" name="ateliers" value="bendack" />
               Back-end
             </label>
@@ -79,23 +84,23 @@
           <fieldset>
             <legend>Journée(s) de participation *</legend>
 
-            <label class = "labelSmall">
+            <label class="labelSmall">
               <input type="radio" name="journee" value="jour1" required />
               Jour 1
-            </label >
+            </label>
 
-            <label class = "labelSmall">
+            <label class="labelSmall">
               <input type="radio" name="journee" value="jour2" />
               Jour 2
             </label>
 
-            <label class = "labelSmall">
+            <label class="labelSmall">
               <input type="radio" name="journee" value="les-deux" />
               Les deux
             </label>
           </fieldset>
 
-          <label for="message" class = "labelBig">Message</label>
+          <label for="message" class="labelBig">Message</label>
           <textarea
             id="message"
             name="message"
@@ -103,7 +108,7 @@
             placeholder="Votre message..."
           ></textarea>
 
-          <label class = "labelSmall">
+          <label class="labelSmall">
             <input
               type="checkbox"
               id="consentement"
